@@ -1,0 +1,334 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #000;
+  --title-text-color: #212121;
+  --address-text-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --active-button-color: #188ce8;
+  --primary-background-color: #fff;
+  --main-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  background-color: var(--primary-background-color);
+  max-width: 1600px;
+}
+img {
+  display: block;
+}
+header {
+  border-bottom: 1px solid #ececec;
+}
+.section {
+  padding: 94px 0;
+}
+.section-examples {
+  padding-bottom: 94px;
+}
+
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header section */
+
+.header-logo,
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+.header-logo {
+  padding: 24px 0 25px 0;
+  margin-right: 93px;
+}
+.header-logo-studio {
+  color: var(--secondary-text-color);
+}
+.site-nav a,
+.contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+}
+.site-nav a {
+  color: var(--title-text-color);
+}
+.contacts a {
+  color: var(--primary-text-color);
+}
+.site-nav,
+.contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav {
+  margin-right: 331px;
+}
+.site-nav li:not(:last-child),
+.contacts li:not(:last-child) {
+  margin-right: 50px;
+}
+
+header .container,
+.site-nav,
+.contacts,
+.advantages-list,
+.examples-images,
+.member-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.contacts a:hover,
+.contacts a:focus,
+.site-nav .active,
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--accent-color);
+}
+
+/* main sections*/
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+}
+.hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: -1px;
+}
+/* filter buttons */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  border-radius: 4px;
+
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+  background-color: var(--main-background-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+.preview li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.preview li:nth-child(3n) {
+  margin-right: 0;
+}
+.preview li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.preview-title {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+/* hero section */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--footer-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: var(--primary-background-color);
+}
+.button-hero {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  display: block;
+  margin: 30px auto 0 auto;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--active-button-color);
+}
+
+/* advantages section */
+.advantages-list {
+  display: grid;
+  grid-template-columns: 25.64% 25.64% 25.64% 23.08%;
+}
+.advantages-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.advantage-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+.advantage-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* our team section */
+.team {
+  background-color: var(--main-background-color);
+}
+.member-card {
+  padding-bottom: 30px;
+  background-color: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.member-profile {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/* portfolio */
+/* filter */
+/* prewiev */
+.project-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 3px;
+
+  color: var(--title-text-color);
+}
+.project-tag {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+/* footer section */
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 22px;
+}
+.footer-logo-studio {
+  color: white;
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-link {
+  color: white;
+}
+.address-contact {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--address-text-color);
+}
