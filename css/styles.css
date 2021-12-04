@@ -20,6 +20,9 @@ button {
   font-family: inherit;
 }
 
+img {
+  display: block;
+}
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #000;
@@ -37,25 +40,20 @@ body {
   background-color: var(--primary-background-color);
   max-width: 1600px;
 }
-img {
-  display: block;
-}
 header {
   border-bottom: 1px solid #ececec;
 }
 .section {
   padding: 94px 0;
 }
-.section-examples {
-  padding-bottom: 94px;
-}
-
 .container {
   padding: 0 15px;
   width: 1200px;
   margin: 0 auto;
 }
-
+.section-examples {
+  padding-bottom: 94px;
+}
 /* header section */
 
 .header-logo,
