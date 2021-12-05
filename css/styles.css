@@ -110,7 +110,10 @@ header .container,
   display: flex;
   justify-content: space-between;
 }
-
+footer .container {
+  display: flex;
+  justify-content: flex-start;
+}
 .site-nav a:hover,
 .site-nav a:focus,
 .contacts a:hover,
@@ -329,4 +332,17 @@ header .container,
   display: inline-block;
   margin-top: 6px;
   color: var(--address-text-color);
+}
+.follow {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.follow-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
