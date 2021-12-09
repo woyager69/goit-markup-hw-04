@@ -52,6 +52,9 @@ body {
 header {
   border-bottom: 1px solid #ececec;
 }
+.header-section {
+  max-height: 80px;
+}
 .section {
   padding: 94px 0;
 }
