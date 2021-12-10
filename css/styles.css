@@ -177,7 +177,6 @@ footer .container {
 .filter li:not(:last-child) {
   margin-right: 8px;
 }
-
 .filter-button {
   font-weight: 500;
   font-size: 16px;
@@ -233,8 +232,7 @@ footer .container {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
 
   background-color: var(--footer-background-color);
 }
@@ -412,8 +410,7 @@ footer .container {
 }
 /* footer section */
 .footer-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: var(--footer-background-color);
 }
 .footer-logo {
@@ -473,9 +470,6 @@ footer .container {
   background-color: var(--accent-color);
 }
 
-.footer-link svg {
-  width: 22px;
-  height: 22px;
-
+.footer-icon {
   fill: var(--primary-background-color);
 }
