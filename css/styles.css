@@ -170,7 +170,7 @@ footer .container {
 /* hero section */
 .hero {
   max-height: 600px;
-  background-image: linear-gradient(to right, rgba(58, 48, 47, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background-hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
