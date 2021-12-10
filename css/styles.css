@@ -42,6 +42,8 @@ img {
   --active-button-color: #188ce8;
   --primary-white-color: #fff;
   --main-background-color: #f5f4fa;
+  --hero-background-color: #c4c4c4;
+
   --footer-background-color: #2f303a;
 }
 body {
@@ -167,6 +169,7 @@ footer .container {
 
 /* hero section */
 .hero {
+  max-height: 600px;
   background-image: linear-gradient(to right, rgba(58, 48, 47, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/background-hero.jpg');
   background-repeat: no-repeat;
@@ -174,7 +177,7 @@ footer .container {
   background-size: cover;
   padding: 200px 0;
 
-  background-color: var(--footer-background-color);
+  background-color: var(--hero-background-color);
 }
 .hero-title {
   font-weight: 900;
